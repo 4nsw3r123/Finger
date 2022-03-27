@@ -34,7 +34,7 @@ class FingerManager:
             func_name = idc.get_func_name(pfn.start_ea)
             func_symbol = self.recognize_function(pfn.start_ea)
             if func_symbol:
-                idc.set_color(pfn.start_ea, idc.CIC_FUNC, 0x98FF98)
+#                 idc.set_color(pfn.start_ea, idc.CIC_FUNC, 0x98FF98)
                 idaapi.set_name(pfn.start_ea, func_symbol, idaapi.SN_FORCE)
                 idaapi.update_func(pfn)
                 print("[+]Recognize %s: %s" %(func_name, func_symbol))
@@ -49,7 +49,7 @@ class FingerManager:
             func_name = idc.get_func_name(pfn.start_ea)
             func_symbol = self.recognize_function(pfn.start_ea)
             if func_symbol:
-                idc.set_color(pfn.start_ea, idc.CIC_FUNC, 0x98FF98)
+#                 idc.set_color(pfn.start_ea, idc.CIC_FUNC, 0x98FF98)
                 idaapi.set_name(pfn.start_ea, func_symbol, idaapi.SN_FORCE)
                 idaapi.update_func(pfn)
                 print("[+]Recognize %s: %s" %(func_name, func_symbol))
